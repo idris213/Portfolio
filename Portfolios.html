@@ -1,147 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Idris Benamra – Software Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; }
-    header { background-color: #1a73e8; color: #fff; padding: 40px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: 10px 0 0; font-size: 1.1rem; }
-    .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #1a73e8; margin-bottom: 20px; }
-    .section { background-color: #fff; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    .project img { max-width: 100%; border-radius: 10px; margin-top: 10px; }
-    footer { text-align: center; padding: 20px; background-color: #1a73e8; color: #fff; margin-top: 40px; }
-    a { color: #fff; text-decoration: underline; }
-    a:hover { text-decoration: underline; }
-    .photo-scroll { display: flex; gap: 12px; overflow-x: auto; padding: 10px 0; scrollbar-width: thin; }
-    .photo-scroll img { flex: 0 0 auto; height: 160px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #f0f0f0; }
-    .photo-scroll img:hover { transform: translateY(-2px); transition: transform 0.2s ease; }
-    .photo-scroll__empty { color: #777; font-size: 0.95rem; }
-    .worldshop-link { color: #1a73e8; text-decoration: underline; font-weight: 600; }
-    .resume-btn { display: inline-block; margin-top: 18px; padding: 12px 26px; border-radius: 999px; background-color: #fff; color: #1a73e8; font-weight: 600; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease; }
-    .resume-btn:hover { background-color: #e0ecff; transform: translateY(-1px); }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-      .photo-scroll img { height: 120px; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Idris Benamra</h1>
-    <p>Software Developer | B.Sc Computer Science | M.Sc Data Science (Ongoing)</p>
-    <p><a href="mailto:idrisbenamra213@gmail.com">idrisbenamra213@gmail.com</a> | 
-        LinkedIn: <a href="https://linkedin.com/in/idris-b-546a5a261" target="_blank">linkedin.com/in/idrisbenamra</a>
-     </p>
-    <a class="resume-btn" href="Resume/BENAMRA%20IDRIS%20resume.pdf" download>Download Résumé</a>
-  </header>
+<section class="section">
+  <h2>Projects</h2>
 
-  <div class="container">
+  <!-- TAXI DISPO -->
+  <div class="project">
+    <h3>Taxi Dispo – Startup / Final Year Project</h3>
+    <p><strong>Role:</strong> Full-Stack Developer & Designer</p>
+    <p><strong>Tech:</strong> React Native, Firebase, Node.js</p>
 
-    <section class="section">
-      <h2>About Me</h2>
-      <p>I am Idris Benamra, a Software Developer with a Bachelor's degree in Computer Science and currently pursuing a Master's degree in Data Science. I combine strong software engineering fundamentals—algorithms, data structures, OOP, and databases—with hands-on experience building modern web and mobile applications using technologies like React, Next.js, Node.js, React Native, Prisma, and Mongoose.</p>
-      <p>My work focuses on creating stable, scalable, and user-centered applications with attention to performance, data integrity, and clean UI/UX. I am well-prepared for roles such as Software Developer, Application Support Engineer, and Full-Stack Developer, and I am eager to gain real-world experience in production environments.</p>
-    </section>
+    <p><strong>Backend Highlights:</strong></p>
+    <ul>
+      <li>Implemented backend logic for ride requests, driver matching, and real-time updates.</li>
+      <li>Developed APIs to handle ride flows, availability, and notifications.</li>
+      <li>Used Firebase for authentication, push notifications, and real-time data sync.</li>
+    </ul>
 
-    <section class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> C, C#, Java (OOP), JavaScript, TypeScript, Python</li>
-        <li><strong>Backend:</strong> Node.js, Express, REST APIs, JWT Auth, WebSockets</li>
-        <li><strong>ORM/ODM:</strong> Prisma (SQL), Mongoose (MongoDB)</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-        <li><strong>Frontend:</strong> React, Next.js, WordPress, HTML, CSS</li>
-        <li><strong>Mobile:</strong> React Native</li>
-        <li><strong>CS Fundamentals:</strong> Algorithms, Data Structures, OOP, Git</li>
-        <li><strong>Data Science:</strong> Pandas, NumPy, ML basics</li>
-        <li><strong>Cloud / Deployment:</strong> Azure (practice & planned deployments)</li>
-      </ul>
-    </section>
+    <p><strong>Frontend Highlights:</strong></p>
+    <ul>
+      <li>Designed and built a mobile UI inspired by traditional Algerian styles.</li>
+      <li>Created user flows for booking, tracking, and accepting rides.</li>
+      <li>Built a feature where a driver receives requests from nearby passengers (smart matching).</li>
+    </ul>
 
-    <section class="section">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Taxi Dispo – Startup / Final Year Project</h3>
-        <p><strong>Role:</strong> Full-Stack Developer & Designer</p>
-        <p><strong>Tech:</strong> React Native, Firebase / Node.js / Backend APIs</p>
-        <p><strong>Backend Highlights:</strong></p>
-        <ul>
-          <li>Implemented backend services to handle ride requests, driver assignments, and real-time location updates.</li>
-          <li>Used Firebase for authentication, notifications, and database storage.</li>
-          <li>Designed APIs for ride-matching feature and transaction tracking.</li>
-        </ul>
-        <p><strong>Frontend Highlights:</strong></p>
-        <ul>
-          <li>Mobile app with user-centered design and real-time ride tracking.</li>
-          <li>Implemented smart ride-matching feature for nearby ride requests.</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <h3>Exchange Web System – Arabic Web App</h3>
-        <p><strong>Role:</strong> Full-Stack Developer</p>
-        <p><strong>Tech:</strong> Node.js, Express, REST APIs, MongoDB, SQL, WordPress</p>
-        <p><strong>Backend Highlights:</strong></p>
-        <ul>
-          <li>Developed RESTful APIs to manage currency exchange data, transactions, and user authentication.</li>
-          <li>Implemented secure JWT authentication and role-based access control.</li>
-          <li>Designed database schemas in MongoDB and SQL for optimized querying and reporting.</li>
-        </ul>
-        <p><strong>Frontend Highlights:</strong></p>
-        <ul>
-          <li>Developed WordPress-based responsive interface for Arabic users.</li>
-          <li>Integrated API endpoints for dynamic content and transactions.</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <h3>Chat App – Next.js (In Progress)</h3>
-        <p><strong>Role:</strong> Full-Stack Developer</p>
-        <p><strong>Tech:</strong> Next.js, Node.js, Express, WebSockets, JWT Auth, Tailwind CSS, Azure</p>
-        <p><strong>Backend Highlights:</strong></p>
-        <ul>
-          <li>Building real-time messaging backend using Node.js, Express, and WebSockets.</li>
-          <li>JWT authentication to secure user sessions.</li>
-          <li>Designing database schemas for chat history and user management.</li>
-          <li>Deployment plan on **Microsoft Azure** for cloud-hosted scalable backend.</li>
-        </ul>
-        <p><strong>Frontend Highlights:</strong></p>
-        <ul>
-          <li>Next.js SPA with responsive design and interactive chat UI.</li>
-          <li>Integrating backend APIs for seamless real-time communication.</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <h3>WorldShop80.fr – WordPress E-Commerce</h3>
-        <p><strong>Role:</strong> Web Designer & Developer</p>
-        <p><strong>Tech:</strong> WordPress, HTML, CSS, JavaScript, PHP</p>
-        <p><strong>Backend Highlights:</strong></p>
-        <ul>
-          <li>Configured WooCommerce backend for product management, order processing, and payments.</li>
-          <li>Customized backend functions using PHP and WordPress hooks.</li>
-        </ul>
-        <p><strong>Frontend Highlights:</strong></p>
-        <ul>
-          <li>Responsive design and smooth navigation for optimal user experience.</li>
-          <li>Focused on clean UI and performance optimization.</li>
-        </ul>
-      </div>
-
-    </section>
-
+    <p><strong>Screenshots:</strong></p>
+    <div class="photo-scroll">
+      <img src="./TaxiDispo/1ece1668-691b-4f4d-9443-7ece5bfb579f.JPG" loading="lazy">
+      <img src="./TaxiDispo/2ad4fd2b-5049-4b55-8434-6d561212987a.JPG" loading="lazy">
+      <img src="./TaxiDispo/3864512a-5d90-43b1-9d9a-c22adf85aca6.JPG" loading="lazy">
+      <img src="./TaxiDispo/66914781-2df6-4ef6-a77d-22c8c8ac4816.JPG" loading="lazy">
+      <img src="./TaxiDispo/6cb9bb74-6c55-4d63-8e05-7632a14753fd.JPG" loading="lazy">
+      <img src="./TaxiDispo/e2d94fbf-b437-4567-b5e2-33bc45f8048b.JPG" loading="lazy">
+    </div>
   </div>
 
-  <footer>
-    &copy; 2025 Idris Benamra | Software Developer Portfolio
-  </footer>
+  <!-- EXCHANGE SYSTEM -->
+  <div class="project">
+    <h3>Exchange Web System – Arabic Web App</h3>
+    <p><strong>Role:</strong> Full-Stack Developer</p>
+    <p><strong>Tech:</strong> Node.js, Express, MongoDB, SQL, WordPress</p>
 
-</body>
-</html>
+    <p><strong>Backend Highlights:</strong></p>
+    <ul>
+      <li>Developed REST APIs for currency exchange rates, transactions, and user authentication.</li>
+      <li>Designed MongoDB & SQL schemas and implemented CRUD operations.</li>
+      <li>Integrated JWT authentication and secure data validation.</li>
+    </ul>
+
+    <p><strong>Frontend Highlights:</strong></p>
+    <ul>
+      <li>Built the Arabic UI using WordPress, ensuring full responsiveness.</li>
+      <li>Integrated backend endpoints inside custom pages and components.</li>
+    </ul>
+
+    <p><strong>Screenshots:</strong></p>
+    <div class="photo-scroll">
+      <img src="./exchangeWebSys/IMG_2172.jpg" loading="lazy">
+    </div>
+  </div>
+
+  <!-- CHAT APP -->
+  <div class="project">
+    <h3>Chat App – Next.js (In Progress)</h3>
+    <p><strong>Role:</strong> Full-Stack Developer</p>
+    <p><strong>Tech:</strong> Next.js, Node.js, Express, WebSockets, JWT, Tailwind CSS, Azure</p>
+
+    <p><strong>Backend Highlights:</strong></p>
+    <ul>
+      <li>Building a real-time messaging backend using WebSockets + Express.</li>
+      <li>Creating a secure authentication system using JWT and hashed credentials.</li>
+      <li>Designing scalable database schemas for conversations, messages, and users.</li>
+      <li>Preparing for deployment on Microsoft Azure (App Service + Database).</li>
+    </ul>
+
+    <p><strong>Frontend Highlights:</strong></p>
+    <ul>
+      <li>Next.js SPA with fully responsive, modern UI built with Tailwind CSS.</li>
+      <li>Integrating APIs and WebSocket events for real-time interaction.</li>
+      <li>Clean UI/UX focused on speed and accessibility.</li>
+    </ul>
+
+    <p><strong>Screenshots:</strong></p>
+    <div class="photo-scroll">
+      <span class="photo-scroll__empty">Screenshots coming soon as development progresses.</span>
+    </div>
+  </div>
+
+  <!-- WORLDSHOP -->
+  <div class="project">
+    <h3>WorldShop80.fr – WordPress E-Commerce</h3>
+    <p><strong>Role:</strong> Web Designer & Developer</p>
+    <p><strong>Tech:</strong> WordPress, HTML, CSS, JavaScript, PHP</p>
+
+    <p><strong>Highlights:</strong></p>
+    <ul>
+      <li>Developed a complete e-commerce store with payment integration.</li>
+      <li>Designed a clean, fast, and responsive storefront.</li>
+      <li>Customized WordPress plugins and UI components.</li>
+    </ul>
+
+    <p><strong>Link:</strong> <a class="worldshop-link" href="https://worldshop80.fr" target="_blank">worldshop80.fr</a></p>
+
+    <div class="photo-scroll">
+      <img src="./worldshop80/IMG_2213.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2214.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2215.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2216.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2217.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2218.PNG" loading="lazy">
+      <img src="./worldshop80/IMG_2219.PNG" loading="lazy">
+    </div>
+  </div>
+
+</section>
