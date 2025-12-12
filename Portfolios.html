@@ -1,113 +1,256 @@
-<section class="section">
-  <h2>Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-  <!-- TAXI DISPO -->
-  <div class="project">
-    <h3>Taxi Dispo – Startup / Final Year Project</h3>
-    <p><strong>Role:</strong> Full-Stack Developer & Designer</p>
-    <p><strong>Tech:</strong> React Native, Firebase, Node.js</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idris Benamra – Portfolio</title>
 
-    <p><strong>Backend Highlights:</strong></p>
-    <ul>
-      <li>Implemented backend logic for ride requests, driver matching, and real-time updates.</li>
-      <li>Developed APIs to handle ride flows, availability, and notifications.</li>
-      <li>Used Firebase for authentication, push notifications, and real-time data sync.</li>
-    </ul>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #222;
+    }
 
-    <p><strong>Frontend Highlights:</strong></p>
-    <ul>
-      <li>Designed and built a mobile UI inspired by traditional Algerian styles.</li>
-      <li>Created user flows for booking, tracking, and accepting rides.</li>
-      <li>Built a feature where a driver receives requests from nearby passengers (smart matching).</li>
-    </ul>
+    header {
+      background: #0d1b2a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
 
-    <p><strong>Screenshots:</strong></p>
-    <div class="photo-scroll">
-      <img src="./TaxiDispo/1ece1668-691b-4f4d-9443-7ece5bfb579f.JPG" loading="lazy">
-      <img src="./TaxiDispo/2ad4fd2b-5049-4b55-8434-6d561212987a.JPG" loading="lazy">
-      <img src="./TaxiDispo/3864512a-5d90-43b1-9d9a-c22adf85aca6.JPG" loading="lazy">
-      <img src="./TaxiDispo/66914781-2df6-4ef6-a77d-22c8c8ac4816.JPG" loading="lazy">
-      <img src="./TaxiDispo/6cb9bb74-6c55-4d63-8e05-7632a14753fd.JPG" loading="lazy">
-      <img src="./TaxiDispo/e2d94fbf-b437-4567-b5e2-33bc45f8048b.JPG" loading="lazy">
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      border-left: 5px solid #1d4ed8;
+      padding-left: 12px;
+    }
+
+    .project {
+      background: white;
+      padding: 25px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #1f2937;
+    }
+
+    .photo-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding-top: 15px;
+    }
+
+    .photo-scroll img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-scroll__empty {
+      color: #888;
+      font-style: italic;
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    a.worldshop-link {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.worldshop-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Idris Benamra</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- PROJECTS SECTION -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <!-- TAXI DISPO -->
+    <div class="project">
+      <h3>Taxi Dispo – Startup / Final Year Project</h3>
+      <p><strong>Role:</strong> Full-Stack Developer & Designer</p>
+      <p><strong>Tech:</strong> React Native, Firebase, Node.js</p>
+
+      <p><strong>Backend Highlights:</strong></p>
+      <ul>
+        <li>Implemented backend logic for ride requests, driver matching, and real-time updates.</li>
+        <li>Developed APIs to handle ride flows, availability, and notifications.</li>
+        <li>Used Firebase for authentication, push notifications, and real-time data sync.</li>
+      </ul>
+
+      <p><strong>Frontend Highlights:</strong></p>
+      <ul>
+        <li>Designed and built a mobile UI inspired by traditional Algerian styles.</li>
+        <li>Created user flows for booking, tracking, and accepting rides.</li>
+        <li>Built a feature where a driver receives requests from nearby passengers (smart matching).</li>
+      </ul>
+
+      <p><strong>Screenshots:</strong></p>
+      <div class="photo-scroll">
+        <img src="./TaxiDispo/1ece1668-691b-4f4d-9443-7ece5bfb579f.JPG" loading="lazy" />
+        <img src="./TaxiDispo/2ad4fd2b-5049-4b55-8434-6d561212987a.JPG" loading="lazy" />
+        <img src="./TaxiDispo/3864512a-5d90-43b1-9d9a-c22adf85aca6.JPG" loading="lazy" />
+        <img src="./TaxiDispo/66914781-2df6-4ef6-a77d-22c8c8ac4816.JPG" loading="lazy" />
+        <img src="./TaxiDispo/6cb9bb74-6c55-4d63-8e05-7632a14753fd.JPG" loading="lazy" />
+        <img src="./TaxiDispo/e2d94fbf-b437-4567-b5e2-33bc45f8048b.JPG" loading="lazy" />
+      </div>
     </div>
-  </div>
 
-  <!-- EXCHANGE SYSTEM -->
-  <div class="project">
-    <h3>Exchange Web System – Arabic Web App</h3>
-    <p><strong>Role:</strong> Full-Stack Developer</p>
-    <p><strong>Tech:</strong> Node.js, Express, MongoDB, SQL, WordPress</p>
+    <!-- EXCHANGE SYSTEM -->
+    <div class="project">
+      <h3>Exchange Web System – Arabic Web App</h3>
+      <p><strong>Role:</strong> Full-Stack Developer</p>
+      <p><strong>Tech:</strong> Node.js, Express, MongoDB, SQL, WordPress</p>
 
-    <p><strong>Backend Highlights:</strong></p>
-    <ul>
-      <li>Developed REST APIs for currency exchange rates, transactions, and user authentication.</li>
-      <li>Designed MongoDB & SQL schemas and implemented CRUD operations.</li>
-      <li>Integrated JWT authentication and secure data validation.</li>
-    </ul>
+      <p><strong>Backend Highlights:</strong></p>
+      <ul>
+        <li>Developed REST APIs for currency exchange rates, transactions, and user authentication.</li>
+        <li>Designed MongoDB & SQL schemas and implemented CRUD operations.</li>
+        <li>Integrated JWT authentication and secure data validation.</li>
+      </ul>
 
-    <p><strong>Frontend Highlights:</strong></p>
-    <ul>
-      <li>Built the Arabic UI using WordPress, ensuring full responsiveness.</li>
-      <li>Integrated backend endpoints inside custom pages and components.</li>
-    </ul>
+      <p><strong>Frontend Highlights:</strong></p>
+      <ul>
+        <li>Built the Arabic UI using WordPress, ensuring full responsiveness.</li>
+        <li>Integrated backend endpoints inside custom pages and components.</li>
+      </ul>
 
-    <p><strong>Screenshots:</strong></p>
-    <div class="photo-scroll">
-      <img src="./exchangeWebSys/IMG_2172.jpg" loading="lazy">
+      <p><strong>Screenshots:</strong></p>
+      <div class="photo-scroll">
+        <img src="./exchangeWebSys/IMG_2172.jpg" loading="lazy" />
+      </div>
     </div>
-  </div>
 
-  <!-- CHAT APP -->
-  <div class="project">
-    <h3>Chat App – Next.js (In Progress)</h3>
-    <p><strong>Role:</strong> Full-Stack Developer</p>
-    <p><strong>Tech:</strong> Next.js, Node.js, Express, WebSockets, JWT, Tailwind CSS, Azure</p>
+    <!-- CHAT APP -->
+    <div class="project">
+      <h3>Chat App – Next.js (In Progress)</h3>
+      <p><strong>Role:</strong> Full-Stack Developer</p>
+      <p><strong>Tech:</strong> Next.js, Node.js, Express, WebSockets, JWT, Tailwind CSS, Azure</p>
 
-    <p><strong>Backend Highlights:</strong></p>
-    <ul>
-      <li>Building a real-time messaging backend using WebSockets + Express.</li>
-      <li>Creating a secure authentication system using JWT and hashed credentials.</li>
-      <li>Designing scalable database schemas for conversations, messages, and users.</li>
-      <li>Preparing for deployment on Microsoft Azure (App Service + Database).</li>
-    </ul>
+      <p><strong>Backend Highlights:</strong></p>
+      <ul>
+        <li>Building a real-time messaging backend using WebSockets + Express.</li>
+        <li>Creating a secure authentication system using JWT and hashed credentials.</li>
+        <li>Designing scalable database schemas for conversations, messages, and users.</li>
+        <li>Preparing for deployment on Microsoft Azure (App Service + Database).</li>
+      </ul>
 
-    <p><strong>Frontend Highlights:</strong></p>
-    <ul>
-      <li>Next.js SPA with fully responsive, modern UI built with Tailwind CSS.</li>
-      <li>Integrating APIs and WebSocket events for real-time interaction.</li>
-      <li>Clean UI/UX focused on speed and accessibility.</li>
-    </ul>
+      <p><strong>Frontend Highlights:</strong></p>
+      <ul>
+        <li>Next.js SPA with fully responsive, modern UI built with Tailwind CSS.</li>
+        <li>Integrating APIs and WebSocket events for real-time interaction.</li>
+        <li>Clean UI/UX focused on speed and accessibility.</li>
+      </ul>
 
-    <p><strong>Screenshots:</strong></p>
-    <div class="photo-scroll">
-      <span class="photo-scroll__empty">Screenshots coming soon as development progresses.</span>
+      <p><strong>Screenshots:</strong></p>
+      <div class="photo-scroll">
+        <span class="photo-scroll__empty">Screenshots coming soon as development progresses.</span>
+      </div>
     </div>
-  </div>
 
-  <!-- WORLDSHOP -->
-  <div class="project">
-    <h3>WorldShop80.fr – WordPress E-Commerce</h3>
-    <p><strong>Role:</strong> Web Designer & Developer</p>
-    <p><strong>Tech:</strong> WordPress, HTML, CSS, JavaScript, PHP</p>
+    <!-- WORLDSHOP -->
+    <div class="project">
+      <h3>WorldShop80.fr – WordPress E-Commerce</h3>
+      <p><strong>Role:</strong> Web Designer & Developer</p>
+      <p><strong>Tech:</strong> WordPress, HTML, CSS, JavaScript, PHP</p>
 
-    <p><strong>Highlights:</strong></p>
-    <ul>
-      <li>Developed a complete e-commerce store with payment integration.</li>
-      <li>Designed a clean, fast, and responsive storefront.</li>
-      <li>Customized WordPress plugins and UI components.</li>
-    </ul>
+      <p><strong>Highlights:</strong></p>
+      <ul>
+        <li>Developed a complete e-commerce store with payment integration.</li>
+        <li>Designed a clean, fast, and responsive storefront.</li>
+        <li>Customized WordPress plugins and UI components.</li>
+      </ul>
 
-    <p><strong>Link:</strong> <a class="worldshop-link" href="https://worldshop80.fr" target="_blank">worldshop80.fr</a></p>
+      <p><strong>Link:</strong>
+        <a class="worldshop-link" href="https://worldshop80.fr" target="_blank">worldshop80.fr</a>
+      </p>
 
-    <div class="photo-scroll">
-      <img src="./worldshop80/IMG_2213.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2214.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2215.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2216.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2217.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2218.PNG" loading="lazy">
-      <img src="./worldshop80/IMG_2219.PNG" loading="lazy">
+      <div class="photo-scroll">
+        <img src="./worldshop80/IMG_2213.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2214.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2215.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2216.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2217.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2218.PNG" loading="lazy" />
+        <img src="./worldshop80/IMG_2219.PNG" loading="lazy" />
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p><strong>Contact:</strong> idris@example.com</p>
+    <p>Qatar – Doha</p>
+    <p>© 2025 Idris Benamra – Portfolio</p>
+  </footer>
+
+
+</body>
+
+</html>
